@@ -1,0 +1,121 @@
+* {
+  font-family: poppins, sans-serif;
+}
+
+.resume {
+  display: flex;
+  gap: 32px;
+  width: 95%;
+  max-width: 900px;
+  margin: 100px auto 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+}
+
+.resume .left {
+  flex: 1;
+  border-right: 1px solid #eee;
+  background-color: #222;
+  color: white;
+  padding: 32px;
+}
+
+.resume .right {
+  flex: 2;
+  padding: 10px 32px 32px 24px;
+}
+
+/* left section  */
+
+.profile {
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 2px solid #b5b5b5;
+  overflow: hidden;
+
+}
+
+.profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+
+}
+
+.resume .left h3 {
+  margin-top: 24px;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.resume .left a {
+  color: #ffffff;
+}
+
+.resume ul {
+  margin: 0 0 16px 20px;
+}
+
+.resume p {
+  margin-bottom: 10px;
+}
+
+/* right section  */
+
+.resume .right h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #0e0e0e;
+  margin: 73px 0 0 0;
+  padding: 0 0 8px 0;
+  position: relative;
+}
+
+.resume .right h1::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: rgb(0, 0, 0);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.resume .right h1:hover::after {
+  width: 100%;
+}
+
+.resume .right h2 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #3e3e3e;
+  margin: 0 0 38px 0;
+}
+
+@media (max-width: 500px) {
+  .resume {
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .resume .right {
+    padding-top: 0;
+  }
+
+  .resume .right h1 {
+    margin: 24px 0 0 0;
+  }
+}
+
+.college, .hsc, .sc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px 0 ;
+}
